@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/delete.png</file>
+        <file>res/download.png</file>
+        <file>res/edit.png</file>
+        <file>res/question.ico</file>
+        <file>res/robot.ico</file>
+        <file>res/settings.ico</file>
+        <file>res/upload.png</file>
+    </qresource>
+</RCC>
