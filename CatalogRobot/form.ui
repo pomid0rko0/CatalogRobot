@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>CatalogRobot</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/res/robot.ico</normaloff>:/res/robot.ico</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <property name="spacing">
@@ -79,7 +83,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="res.qrc">:/res/download.png</pixmap>
+          <pixmap>:/res/download.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
@@ -191,13 +195,13 @@
                <widget class="QLabel" name="label">
                 <property name="minimumSize">
                  <size>
-                  <width>63</width>
+                  <width>42</width>
                   <height>0</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>63</width>
+                  <width>42</width>
                   <height>16777215</height>
                  </size>
                 </property>
@@ -234,7 +238,7 @@
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="res.qrc">
+                 <iconset>
                   <normaloff>:/res/edit.png</normaloff>:/res/edit.png</iconset>
                 </property>
                </widget>
@@ -257,7 +261,7 @@
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="res.qrc">
+                 <iconset>
                   <normaloff>:/res/delete.png</normaloff>:/res/delete.png</iconset>
                 </property>
                </widget>
@@ -290,13 +294,13 @@
         <widget class="QLabel" name="ID">
          <property name="minimumSize">
           <size>
-           <width>63</width>
+           <width>42</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>63</width>
+           <width>42</width>
            <height>16777215</height>
           </size>
          </property>
@@ -326,7 +330,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="res.qrc">:/res/upload.png</pixmap>
+          <pixmap>:/res/upload.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
@@ -396,8 +400,6 @@
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="res.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
