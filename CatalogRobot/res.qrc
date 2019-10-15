@@ -7,5 +7,10 @@
         <file>res/robot.ico</file>
         <file>res/settings.ico</file>
         <file>res/upload.png</file>
+        <file>res/inst1.png</file>
+        <file>res/inst2.png</file>
+        <file>res/pause.png</file>
+        <file>res/start.png</file>
+        <file>res/stop.png</file>
     </qresource>
 </RCC>

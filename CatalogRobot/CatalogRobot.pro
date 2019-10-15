@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,15 +25,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        form.cpp \
-        main.cpp
+        addform.cpp \
+        brend.cpp \
+        main.cpp \
+        mainwindow.cpp
 
 HEADERS += \
-    form.h
+    addform.h \
+    brend.h \
+    mainwindow.h
 
 
 FORMS += \
-    form.ui
+    addform.ui \
+    mainwindow.ui
 
 
 # Default rules for deployment.
@@ -46,4 +51,6 @@ RESOURCES += \
 
 win32:RC_ICONS = res/robot.ico
 
+INCLUDEPATH += $$PWD/
+DEPENDPATH += $$PWD/
 

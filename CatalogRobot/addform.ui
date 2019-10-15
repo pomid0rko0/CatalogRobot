@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addform</class>
+ <widget class="QMainWindow" name="addform">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>435</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Добавить каталог</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/res/settings.ico</normaloff>:/res/settings.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="name_label">
+      <property name="minimumSize">
+       <size>
+        <width>97</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>97</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Название</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="decline_pushButton">
+      <property name="minimumSize">
+       <size>
+        <width>97</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>97</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Отменить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="name_lineEdit"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="save_pushButton">
+      <property name="minimumSize">
+       <size>
+        <width>97</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="parser">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="proc_comboBox"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="project_lineEdit"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="project_label">
+          <property name="text">
+           <string>Проект парсера</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="proc_label">
+          <property name="text">
+           <string>Наценка организатора, %:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="project_pushButton">
+          <property name="text">
+           <string>Обзор...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="kol_dop_comboBox">
+          <item>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="ident_comboBox">
+          <item>
+           <property name="text">
+            <string>Артикул</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Наименование</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="kol_dop_label">
+          <property name="text">
+           <string>Количество доп. столбцов:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="ident_label">
+          <property name="text">
+           <string>Идентификация:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="site">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item row="2" column="0" colspan="2">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>-321</y>
+             <width>409</width>
+             <height>606</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <property name="leftMargin">
+             <number>5</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <property name="spacing">
+             <number>5</number>
+            </property>
+            <item row="5" column="2">
+             <widget class="QLineEdit" name="min_r_lineEdit">
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item row="17" column="1">
+             <widget class="QLabel" name="isImg_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять картинки</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="1">
+             <widget class="QLabel" name="price_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять Цену</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="20" column="1">
+             <widget class="QLabel" name="onlyArt_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Отключить актуализацию по картинке. 
+Оставить только актуализацию по артикулу</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QLineEdit" name="max_r_lineEdit">
+              <property name="text">
+               <string>100</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLineEdit" name="min_price_lineEdit">
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QLabel" name="d1_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять поле 5</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="16" column="2">
+             <widget class="QComboBox" name="rub_comboBox">
+              <property name="currentIndex">
+               <number>1</number>
+              </property>
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLabel" name="max_r_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Максимальное количество товаров в ряду</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="max_price_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Максимальная цена товара</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="disc_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Изменить цену с эталонной на</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="17" column="2">
+             <widget class="QComboBox" name="isImg_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="18" column="1">
+             <widget class="QLabel" name="hideOther_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Скрывать отсутствующие товары</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLabel" name="min_r_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Минимальное количество товаров в ряду </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLineEdit" name="max_price_lineEdit">
+              <property name="text">
+               <string>999999</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QLabel" name="sort_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять сортировку</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="20" column="2">
+             <widget class="QComboBox" name="onlyArt_comboBox">
+              <property name="currentIndex">
+               <number>1</number>
+              </property>
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="16" column="1">
+             <widget class="QLabel" name="rub_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Переносить рубрикатор 
+(Ставить да, если нужно обновить рубрики у существующих товаров. Новые товары идут с рубриками если настроено.)</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QLabel" name="_r_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять структуру рядов</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="2">
+             <widget class="QComboBox" name="name_up_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="14" column="2">
+             <widget class="QComboBox" name="price_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="10" column="2">
+             <widget class="QComboBox" name="d2_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="QLabel" name="d2_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять поле 6</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="1">
+             <widget class="QLabel" name="d4_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять поле 8</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="21" column="1">
+             <widget class="QLabel" name="filtr_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять все разделы</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="19" column="2">
+             <widget class="QComboBox" name="trWithoutIm_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QComboBox" name="disc_comboBox">
+              <property name="maxCount">
+               <number>101</number>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="2">
+             <widget class="QComboBox" name="d4_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="18" column="2">
+             <widget class="QComboBox" name="hideOther_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="13" column="1">
+             <widget class="QLabel" name="d5_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять поле 9</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="2">
+             <widget class="QComboBox" name="d1_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="13" column="2">
+             <widget class="QComboBox" name="d5_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="21" column="2">
+             <widget class="QComboBox" name="filtr_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <widget class="QLabel" name="d3_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять поле 7</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="1">
+             <widget class="QLabel" name="name_up_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Обновлять Наименование</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="min_price_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Минимальная цена товара </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="19" column="1">
+             <widget class="QLabel" name="trWithoutIm_label">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Переносить товары без картинок</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QComboBox" name="sort_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="11" column="2">
+             <widget class="QComboBox" name="d3_comboBox">
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QComboBox" name="_r_comboBox">
+              <property name="currentIndex">
+               <number>1</number>
+              </property>
+              <property name="maxVisibleItems">
+               <number>2</number>
+              </property>
+              <property name="maxCount">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Да</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Нет</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="0" column="2" rowspan="2">
+             <widget class="QLineEdit" name="id_site_lineEdit">
+              <property name="whatsThis">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;В этом поле укажите ссылку на встройку на сайте. Ссылку можно получить в ваших парсерах, если нажать правой кнопкой мыши на кнопку &amp;quot;Скопировать&amp;quot; и выбрать кнопку &amp;quot;Копировать ссылку&amp;quot; (в браузере Firefox) или &amp;quot;Скопировать адрес ссылки&amp;quot; (в браузере Google Chrome)&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;:/res/inst1.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;:/res/inst2.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;Ссылка должна иметь следующий вид:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#d69545;&quot;&gt;https://rf-sp.ru/org/offers/transfer/cityTarget/число1/citySource/число2/brendSource/число3/brendTarget/id_закупки/brendName/название_закупки_на_сайте/hash/хэш&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" rowspan="2">
+             <widget class="QLabel" name="id_site_label">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>id встройки</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="id_label">
+      <property name="text">
+       <string>id закупки</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="id_lineEdit"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>name_lineEdit</tabstop>
+  <tabstop>id_lineEdit</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>id_site_lineEdit</tabstop>
+  <tabstop>disc_comboBox</tabstop>
+  <tabstop>min_price_lineEdit</tabstop>
+  <tabstop>max_price_lineEdit</tabstop>
+  <tabstop>min_r_lineEdit</tabstop>
+  <tabstop>max_r_lineEdit</tabstop>
+  <tabstop>sort_comboBox</tabstop>
+  <tabstop>_r_comboBox</tabstop>
+  <tabstop>d1_comboBox</tabstop>
+  <tabstop>d2_comboBox</tabstop>
+  <tabstop>d3_comboBox</tabstop>
+  <tabstop>d4_comboBox</tabstop>
+  <tabstop>d5_comboBox</tabstop>
+  <tabstop>price_comboBox</tabstop>
+  <tabstop>name_up_comboBox</tabstop>
+  <tabstop>rub_comboBox</tabstop>
+  <tabstop>isImg_comboBox</tabstop>
+  <tabstop>hideOther_comboBox</tabstop>
+  <tabstop>trWithoutIm_comboBox</tabstop>
+  <tabstop>onlyArt_comboBox</tabstop>
+  <tabstop>filtr_comboBox</tabstop>
+  <tabstop>save_pushButton</tabstop>
+  <tabstop>decline_pushButton</tabstop>
+  <tabstop>project_lineEdit</tabstop>
+  <tabstop>project_pushButton</tabstop>
+  <tabstop>proc_comboBox</tabstop>
+  <tabstop>kol_dop_comboBox</tabstop>
+  <tabstop>ident_comboBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
